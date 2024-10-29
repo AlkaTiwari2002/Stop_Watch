@@ -1,0 +1,297 @@
+/* .stopwatch-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .stopwatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .stopwatch h2{
+    font-size: 2rem;
+    text-decoration: underline;
+  }
+  
+  .stopwatch h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #333;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .stopwatch h1 span {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .stopwatch h1 span label {
+    margin-left: 5px;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .stopwatch .buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .stopwatch button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .stopwatch button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .stopwatch button:not(:disabled):hover {
+    background-color: #0056b3;
+  }
+   */
+
+
+   /* .stopwatch-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e0f7fa;
+    font-family: Arial, sans-serif;
+  }
+  
+  .stopwatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  .stopwatch h2 {
+    font-size: 2.2rem;
+    color: #00796b;
+    margin-bottom: 8px;
+    text-decoration: underline;
+  }
+  
+  .stopwatch h1 {
+    font-size: 2.5rem;
+    color: #333;
+    display: flex;
+    gap: 13px;
+  }
+  
+  .stopwatch h1 span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #e3f2fd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 80px;
+    position: relative;
+  }
+  
+  .stopwatch h1 span label {
+    margin-top: 5px;
+    font-size: 1.2rem;
+    color: #555;
+    text-transform: uppercase;
+  }
+  
+  .stopwatch h1 span .time-value {
+    font-size: 2rem;
+    color: #0c7ace;
+  }
+  
+  @keyframes scrollEffect {
+    0% { transform: translateY(-10px); opacity: 0.7; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  
+  .stopwatch.running h1 span {
+    animation: scrollEffect 0.4s ease-out;
+  }
+  
+  .stopwatch .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .stopwatch button {
+    font-size: 1.3rem;
+    padding: 12px 25px;
+    margin:0 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #0288d1;
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .stopwatch button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+  
+  .stopwatch button:not(:disabled):hover {
+    background-color: #0277bd;
+    transform: translateY(-2px);
+  }
+  
+  .stopwatch button:not(:disabled):active {
+    background-color: #01579b;
+    transform: translateY(1px);
+  }
+   */
+
+
+
+   .stopwatch-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(170, 195, 193, 0.7), rgba(53, 55, 56, 0.7)),
+     url('stopWatch.jpeg'); /* Path to your image in the public folder */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+  }
+  
+  .stopwatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #bba0a0;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  .stopwatch h2 {
+    font-size: 2.2rem;
+    color: #02423b;
+    margin-bottom: 8px;
+    text-decoration: underline;
+  }
+  
+  .stopwatch h1 {
+    font-size: 2.5rem;
+    color: #333;
+    display: flex;
+    gap: 13px;
+  }
+  
+  .stopwatch h1 span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #e3f2fd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 80px; /* Ensures the boxes are even */
+    position: relative;
+  }
+  
+  .stopwatch h1 span label {
+    margin-top: 5px;
+    font-size: 1.2rem;
+    color: #555;
+    text-transform: uppercase;
+  }
+  
+  .stopwatch h1 span .time-value {
+    font-size: 2rem;
+    color: #0c7ace;
+  }
+  
+  @keyframes scrollEffect {
+    0% { transform: translateY(-10px); opacity: 0.7; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  
+  .stopwatch.running h1 span {
+    animation: scrollEffect 0.4s ease-out;
+  }
+  
+  .stopwatch .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .stopwatch button {
+    font-size: 1.3rem;
+    padding: 12px 25px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #0288d1;
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .stopwatch button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+  
+  .stopwatch button:not(:disabled):hover {
+    background-color: #0277bd;
+    transform: translateY(-2px);
+  }
+  
+  .stopwatch button:not(:disabled):active {
+    background-color: #01579b;
+    transform: translateY(1px);
+  }
+  
